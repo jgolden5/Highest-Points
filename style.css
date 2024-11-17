@@ -1,5 +1,6 @@
 body {
 	text-align: center;
+	position: relative;
 }
 
 .small-circle {
@@ -14,4 +15,22 @@ body {
     width: 400px;
     height: 200px;
     margin: 5px;
+}
+
+.arrow-left {
+    text-decoration: none;
+    font-size: 80px;
+    color: purple;
+    position: absolute;
+    margin-top: 4vw;
+    left: 7vw;
+}
+
+.arrow-right {
+    text-decoration: none;
+    font-size: 80px;
+    color: purple;
+    position: absolute;
+    margin-top: 3vw;
+    margin-left: 9vw;
 }
