@@ -3,6 +3,11 @@ body {
 	position: relative;
 }
 
+h1 {
+    padding: 0 10px;
+    line-height: 0.7em;
+}
+
 .small-circle {
     width: 10px;
     height: 10px;
