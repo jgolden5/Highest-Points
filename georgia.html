@@ -35,7 +35,9 @@
 <span class="small-circle"></span>
 <a style="color:green;" href="idaho.html">Idaho</a>
 
-<h1>Georgia: Brasstown Bald</h1>
+<div style="text-align:center">
+<button class="state-button" onclick="googleMap()">Georgia: Brasstown Bald</button>
+</div>
 <img src="/Users/jgolden1/html_projects/highest-points/images/brasstown-bald.jpeg" class="image">
 <img src="/Users/jgolden1/html_projects/highest-points/images/brasstown-bald2.jpeg" class="image">
 <br>
@@ -50,5 +52,11 @@
 <br>
 <a style="color:#0000c0" href="highest_points.html">Return to contents</a>
 
+<script>
+    const map_url = "https://www.google.com/maps/place/Brasstown+Bald/";
+    function googleMap() {
+        window.open(map_url);
+    }
+</script>
 </body>
 </html>
