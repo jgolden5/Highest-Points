@@ -34,6 +34,7 @@ h1 {
 
 .arrow-left {
     text-decoration: none;
+    cursor: pointer;
     font-size: 80px;
     color: purple;
     position: absolute;
@@ -43,6 +44,7 @@ h1 {
 
 .arrow-right {
     text-decoration: none;
+    cursor: pointer;
     font-size: 80px;
     color: purple;
     position: absolute;

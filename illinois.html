@@ -55,10 +55,22 @@
 <a style="color:#0000c0" href="highest_points.html">Return to contents</a><a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
 
 <script>
-    const map_url = "https://www.google.com/maps/place/Charles+Mound/";
-    function googleMap() {
-        window.open(map_url);
+function googleMap() {
+    window.open("https://www.google.com/maps/place/Charles+Mound");
+}
+document.addEventListener("keydown", function() {
+    if(event.key == "ArrowLeft" || event.key == "h") {
+        pageLeft();
+    } else if(event.key == "ArrowRight" || event.key == "l") {
+        pageRight();
     }
+});
+function pageLeft() {
+    window.location.href = "idaho.html";
+}
+function pageRight() {
+    window.location.href = "indiana.html";
+}
 </script>
 </body>
 </html>

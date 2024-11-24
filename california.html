@@ -43,10 +43,10 @@
 <img src="/Users/jgolden1/html_projects/highest-points/images/mount-whitney.jpeg" class="image">
 <img src="/Users/jgolden1/html_projects/highest-points/images/mount-whitney2.jpeg" class="image">
 <br>
-<a class="arrow-left" href="arkansas.html"><</a>
+<a class="arrow-left" onclick="pageLeft()"><</a>
 <img src="/Users/jgolden1/html_projects/highest-points/images/mount-whitney3.jpeg" class="image">
 <img src="/Users/jgolden1/html_projects/highest-points/images/mount-whitney4.jpg" class="image">
-<a class="arrow-right" href="colorado.html">></a>
+<a class="arrow-right" onclick="pageRight()">></a>
 <br>
 <img src="/Users/jgolden1/html_projects/highest-points/images/mount-whitney5.jpeg" class="image">
 <img src="/Users/jgolden1/html_projects/highest-points/images/mount-whitney6.jpeg" class="image">
@@ -55,10 +55,22 @@
 <a style="color:#0000c0" href="highest_points.html">Return to contents</a><a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
 
 <script>
-    const map_url = "https://www.google.com/maps/place/Mount+Whitney/";
-    function googleMap() {
-        window.open(map_url);
+function googleMap() {
+    window.open("https://www.google.com/maps/place/Mount+Whitney");
+}
+document.addEventListener("keydown", function() {
+    if(event.key == "ArrowLeft" || event.key == "h") {
+        pageLeft();
+    } else if(event.key == "ArrowRight" || event.key == "l") {
+        pageRight();
     }
+});
+function pageLeft() {
+    window.location.href = "arkansas.html";
+}
+function pageRight() {
+    window.location.href = "colorado.html";
+}
 </script>
 </body>
 </html>
