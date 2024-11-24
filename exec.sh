@@ -1,2 +1,2 @@
 #!/bin/bash
-open contents.html
+open highest_points.html
