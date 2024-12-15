@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Mount Driskill</title>
+  <style>
+        * {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+<a style="color:green;" href="alabama.html">Alabama</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="alaska.html">Alaska</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="arizona.html">Arizona</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="arkansas.html">Arkansas</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="california.html">California</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="colorado.html">Colorado</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="connecticut.html">Connecticut</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="delaware.html">Delaware</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="florida.html">Florida</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="georgia.html">Georgia</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="hawaii.html">Hawaii</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="idaho.html">Idaho</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="illinois.html">Illinois</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="indiana.html">Indiana</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="iowa.html">Iowa</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="kansas.html">Kansas</a>
+<span class="small-circle"></span>
+<a style="color:green;" href="kentucky.html">Kentucky</a>
+<span class="small-circle"></span>
+<a>Lousiana</a>
+
+<div style="text-align:center">
+  <button class="state-button" onclick="googleMap()">Louisiana: Mount Driskill</button>
+</div>
+<img src="/Users/jgolden1/html_projects/highest-points/images/driskill-mountain.webp" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/driskill-mountain2.jpg" class="image">
+<br>
+<a class="arrow-left" onclick="pageLeft()"><</a>
+<img src="/Users/jgolden1/html_projects/highest-points/images/driskill-mountain3.webp" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/driskill-mountain4.jpg" class="image">
+<a class="arrow-right" onclick="pageRight()">></a>
+<br>
+<img src="/Users/jgolden1/html_projects/highest-points/images/driskill-mountain5.jpeg" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/driskill-mountain6.webp" class="image">
+
+<br>
+<a style="color:#0000f0" href="highest_points.html">Return to contents</a><a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
+
+<script>
+function googleMap() {
+    window.open("https://www.google.com/maps/place/Mount+Driskill");
+}
+document.addEventListener("keydown", function() {
+    if(event.key == "ArrowLeft" || event.key == "h") {
+        pageLeft();
+    } else if(event.key == "ArrowRight" || event.key == "l") {
+        pageRight();
+    }
+});
+function pageLeft() {
+    window.location.href = "kentucky.html";
+}
+function pageRight() {
+    window.location.href = "maine.html";
+}
+</script>
+</body>
+</html>

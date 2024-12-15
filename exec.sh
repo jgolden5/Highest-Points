@@ -1,2 +1,2 @@
 #!/bin/bash
-open highest_points.html
+open ~/html_projects/highest-points/highest_points.html
