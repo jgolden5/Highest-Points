@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-    <title>Cheaha Mountain</title>
-    <style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Mount Driskill</title>
+  <style>
         * {
-            background-color: #FFCCCB;
+            background-color: #ebc3e3;
         }
     </style>
 </head>
 <body>
-<a>Alabama</a>
+<a style="color:green;" href="alabama.html">Alabama</a>
 <span class="small-circle"></span>
 <a style="color:green;" href="alaska.html">Alaska</a>
 <span class="small-circle"></span>
@@ -47,28 +47,28 @@
 <span class="small-circle"></span>
 <a style="color:green;" href="louisiana.html">Louisiana</a>
 <span class="small-circle"></span>
-<a style="color:green;" href="maine.html">Maine</a>
+<a>Maine</a>
 
 <div style="text-align:center">
-    <button class="state-button" onclick="googleMap()">Alabama: Cheaha Mountain</button>
+  <button class="state-button" onclick="googleMap()">Maine: Mount Katahdin</button>
 </div>
-<img src="/Users/jgolden1/html_projects/highest-points/images/cheaha-mountain.jpeg" class="image">
-<img src="/Users/jgolden1/html_projects/highest-points/images/cheaha-mountain2.jpeg" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/mount-katahdin.jpg" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/mount-katahdin2.jpg" class="image">
 <br>
 <a class="arrow-left" onclick="pageLeft()"><</a>
-<img src="/Users/jgolden1/html_projects/highest-points/images/cheaha-mountain3.jpeg" class="image">
-<img src="/Users/jgolden1/html_projects/highest-points/images/cheaha-mountain4.jpg" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/mount-katahdin3.jpeg" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/mount-katahdin4.jpg" class="image">
 <a class="arrow-right" onclick="pageRight()">></a>
 <br>
-<img src="/Users/jgolden1/html_projects/highest-points/images/cheaha-mountain5.jpg" class="image">
-<img src="/Users/jgolden1/html_projects/highest-points/images/cheaha-mountain6.jpeg" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/mount-katahdin5.webp" class="image">
+<img src="/Users/jgolden1/html_projects/highest-points/images/mount-katahdin6.jpg" class="image">
 
 <br>
-<a style="color:#0000c0" onclick="pageRight()">Return to contents</a><a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
+<a style="color:#0000f0" href="highest_points.html">Return to contents</a><a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
 
 <script>
 function googleMap() {
-    window.open("https://www.google.com/maps/place/Cheaha+Mountain");
+    window.open("https://www.google.com/maps/place/Mount+Katahdin");
 }
 document.addEventListener("keydown", function() {
     if(event.key == "ArrowLeft" || event.key == "h") {
@@ -78,10 +78,10 @@ document.addEventListener("keydown", function() {
     }
 });
 function pageLeft() {
-    window.location.href = "highest_points.html";
+    window.location.href = "louisiana.html";
 }
 function pageRight() {
-    window.location.href = "alaska.html";
+    window.location.href = "maryland.html";
 }
 </script>
 </body>
