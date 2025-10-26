@@ -1,92 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Borah Peak</title>
-    <style>
-        * {
-            background-color: #999999;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Borah Peak</title>
+  <style>
+    * {
+      background-color: #999999;
+    }
+  </style>
 </head>
 <body>
-<a style="color:green;" href="alabama.html">Alabama</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="alaska.html">Alaska</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="arizona.html">Arizona</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="arkansas.html">Arkansas</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="california.html">California</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="colorado.html">Colorado</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="connecticut.html">Connecticut</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="delaware.html">Delaware</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="florida.html">Florida</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="georgia.html">Georgia</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="hawaii.html">Hawaii</a>
-<span class="small-circle"></span>
-<a>Idaho</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="illinois.html">Illinois</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="indiana.html">Indiana</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="iowa.html">Iowa</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="kansas.html">Kansas</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="kentucky.html">Kentucky</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="louisiana.html">Louisiana</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="maine.html">Maine</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="maryland.html">Maryland</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="massachusetts.html">Massachusetts</a>
 
 <div style="text-align:center">
-    <button class="state-button" onclick="googleMap()">Idaho: Borah Peak</button>
+    <button class="state-button" onclick="googleMap('Borah+Peak')">
+      Idaho: Borah Peak
+    </button>
 </div>
+
 <img src="/images/borah-peak.jpeg" class="image">
 <img src="/images/borah-peak2.jpeg" class="image">
 <br>
-<a class="arrow-left" onclick="pageLeft()"><</a>
+<a class="arrow-left"><</a>
 <img src="/images/borah-peak3.jpg" class="image">
 <img src="/images/borah-peak4.jpeg" class="image">
-<a class="arrow-right" onclick="pageRight()">></a>
+<a class="arrow-right">></a>
 <br>
 <img src="/images/borah-peak5.jpeg" class="image">
 <img src="/images/borah-peak6.jpeg" class="image">
 
 <br>
-<a style="color:#0000c0" href="highest_points.html">Return to contents</a><a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
+<a style="color:#0000c0" href="highest_points.html">Return to contents</a>
+<a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
 
+<script src="/scripts/main.js"></script>
 <script>
-function googleMap() {
-    window.open("https://www.google.com/maps/place/Borah+Peak");
-}
-document.addEventListener("keydown", function() {
-    if(event.key == "ArrowLeft" || event.key == "h") {
-        pageLeft();
-    } else if(event.key == "ArrowRight" || event.key == "l") {
-        pageRight();
-    }
-});
-function pageLeft() {
-    window.location.href = "hawaii.html";
-}
-function pageRight() {
-    window.location.href = "illinois.html";
-}
+  loadNavbar("idaho");
+  addPageNavHandlers("hawaii.html", "illinois.html");
 </script>
 </body>
 </html>

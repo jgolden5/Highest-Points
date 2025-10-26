@@ -1,92 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Mount Katahdin</title>
-  <style>
-        * {
-            background-color: #ebc3e3;
-        }
-    </style>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Mount Katahdin</title>
+<style>
+    * {
+      background-color: #ebc3e3;
+    }
+  </style>
 </head>
 <body>
-<a style="color:green;" href="alabama.html">Alabama</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="alaska.html">Alaska</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="arizona.html">Arizona</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="arkansas.html">Arkansas</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="california.html">California</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="colorado.html">Colorado</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="connecticut.html">Connecticut</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="delaware.html">Delaware</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="florida.html">Florida</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="georgia.html">Georgia</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="hawaii.html">Hawaii</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="idaho.html">Idaho</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="illinois.html">Illinois</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="indiana.html">Indiana</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="iowa.html">Iowa</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="kansas.html">Kansas</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="kentucky.html">Kentucky</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="louisiana.html">Louisiana</a>
-<span class="small-circle"></span>
-<a>Maine</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="maryland.html">Maryland</a>
-<span class="small-circle"></span>
-<a style="color:green;" href="massachusetts.html">Massachusetts</a>
 
 <div style="text-align:center">
-  <button class="state-button" onclick="googleMap()">Maine: Mount Katahdin</button>
+  <button class="state-button" onclick="googleMap('Mount+Katahdin')">
+    Maine: Mount Katahdin
+  </button>
 </div>
+
 <img src="/images/mount-katahdin.jpg" class="image">
 <img src="/images/mount-katahdin2.jpg" class="image">
 <br>
-<a class="arrow-left" onclick="pageLeft()"><</a>
+<a class="arrow-left"><</a>
 <img src="/images/mount-katahdin3.jpeg" class="image">
 <img src="/images/mount-katahdin4.jpg" class="image">
-<a class="arrow-right" onclick="pageRight()">></a>
+<a class="arrow-right">></a>
 <br>
 <img src="/images/mount-katahdin5.webp" class="image">
 <img src="/images/mount-katahdin6.jpg" class="image">
 
 <br>
-<a style="color:#0000f0" href="highest_points.html">Return to contents</a><a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
+<a style="color:#0000c0" href="highest_points.html">Return to contents</a>
+<a href="https://www.peakbagger.com/list.aspx?lid=12004" target="_blank" style="text-decoration:none"> ⛰</a>
 
+<script src="/scripts/main.js"></script>
 <script>
-function googleMap() {
-    window.open("https://www.google.com/maps/place/Mount+Katahdin");
-}
-document.addEventListener("keydown", function() {
-    if(event.key == "ArrowLeft" || event.key == "h") {
-        pageLeft();
-    } else if(event.key == "ArrowRight" || event.key == "l") {
-        pageRight();
-    }
-});
-function pageLeft() {
-    window.location.href = "louisiana.html";
-}
-function pageRight() {
-    window.location.href = "maryland.html";
-}
+  loadNavbar("maine");
+  addPageNavHandlers("louisiana.html", "maryland.html");
 </script>
 </body>
 </html>

@@ -9,9 +9,13 @@ function loadNavbar(currentState) {
   const nav = document.createElement("nav");
   states.forEach((state, i) => {
     const link = document.createElement("a");
-    link.textContent = state.charAt(0).toUpperCase() + state.slice(1);
+    link.textContent = " " + state.charAt(0).toUpperCase() + state.slice(1) + " ";
     if (state === currentState) {
-      link.style.color = "black";
+      if (state === "kentucky") {
+        link.style.color = "white";
+      } else {
+        link.style.color = "black";
+      }
     } else {
       link.style.color = "green";
       link.href = `${state}.html`;
@@ -20,6 +24,9 @@ function loadNavbar(currentState) {
     if (i < states.length - 1) {
       const dot = document.createElement("span");
       dot.className = "small-circle";
+      if (currentState === "kentucky") {
+        dot.style.backgroundColor = "white";
+      }
       nav.appendChild(dot);
     }
   });
