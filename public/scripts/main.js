@@ -2,7 +2,7 @@ const states = [
   "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
   "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho",
   "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana",
-  "maine", "maryland", "massachusetts", "michigan"
+  "maine", "maryland", "massachusetts", "michigan", "minnesota"
 ];
 
 function loadNavbar(currentState) {
@@ -33,12 +33,10 @@ function loadNavbar(currentState) {
   document.body.prepend(nav);
 }
 
-// Google Maps helper
 function googleMap(place) {
   window.open(`https://www.google.com/maps/place/${encodeURIComponent(place)}`);
 }
 
-// Page navigation logic
 function addPageNavHandlers(leftPage, rightPage) {
   document.querySelector(".arrow-left")?.addEventListener("click", () => {
     if (leftPage) window.location.href = leftPage;
@@ -55,8 +53,3 @@ function addPageNavHandlers(leftPage, rightPage) {
     }
   });
 }
-
-// Export globals (so inline HTML can use them)
-window.loadNavbar = loadNavbar;
-window.googleMap = googleMap;
-window.addPageNavHandlers = addPageNavHandlers;

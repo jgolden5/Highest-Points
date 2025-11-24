@@ -1,6 +1,8 @@
-implement encapsulated js backend to remove boilerplate from states
-add michigan
-add minnesota
 add mississippi
 add missouri
 add montana
+add nebraska
+add nevada
+add new hampshire
+encapsulate top links into a navigation menu
+when more features get added, add hamburger menu
