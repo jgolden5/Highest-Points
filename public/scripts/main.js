@@ -2,7 +2,7 @@ const states = [
   "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
   "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho",
   "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana",
-  "maine", "maryland", "massachusetts", "michigan", "minnesota"
+  "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi"
 ];
 
 function loadNavbar(currentState) {
