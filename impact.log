@@ -1,0 +1,6 @@
+12-16-25:
+Developed dynamic navigation components: Implemented a reusable JavaScript function to generate a state‑based navigation bar with conditional styling and interactive elements.
+Integrated external services: Added functionality to open Google Maps directly from the application, enabling seamless access to location‑based information.
+Enhanced user experience with intuitive controls: Built keyboard and arrow‑button navigation handlers to allow smooth page transitions and improve accessibility.
+Applied modular design principles: Separated logic into distinct functions (loadNavbar, googleMap, addPageNavHandlers) and linked them with HTML templates for maintainability.
+Demonstrated front‑end proficiency: Combined HTML, CSS, and JavaScript to create interactive, visually styled pages (e.g., Alabama’s Cheaha Mountain showcase) that highlight both technical and design skills.
